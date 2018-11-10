@@ -11,27 +11,11 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :unique %>
-    <%= form.text_field :unique %>
-  </div>
-
-  <div class="field">
-    <%= form.label :purchased_price %>
-    <%= form.text_field :purchased_price %>
-  </div>
-
-  <div class="field">
-    <%= form.label :purchased_date %>
-    <%= form.datetime_select :purchased_date %>
-  </div>
-
-  <div class="field">
-    <%= form.label :event_id %>
-    <%= form.number_field :event_id %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
-  </div>
+  <%= simple_form_for @ticket do |f| %>
+    <%= f.input :unique %>
+    <%= f.input :purchased_price %>
+    <%= f.input :purchased_date %>
+    <%= f.input :event_id %>
+    <%= f.button :submit %>
+  <% end %>
 <% end %>
