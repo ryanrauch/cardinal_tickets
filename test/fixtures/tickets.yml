@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  unique: MyString
+  purchased_price: 9.99
+  purchased_date: 2018-11-09 23:24:52
+  event_id: 1
+  event: one
+
+two:
+  unique: MyString
+  purchased_price: 9.99
+  purchased_date: 2018-11-09 23:24:52
+  event_id: 1
+  event: two
